@@ -1,6 +1,7 @@
 package dbObjects;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -15,11 +16,24 @@ public class Movie {
     private  String title;
     private int year;
     private String country;
-    //@Autowired
+    @Autowired
     private List<Genre> genres;
     private String description;
     private float raiting;
     private float price;
+
+    public Movie() {
+        System.out.println("Movie created");
+    }
+
+    /*@PostConstruct
+    private void init(){
+        this.id = 1;
+        title = "aaa";
+        year = 1111;
+        country = "UA";
+        System.out.println("Movie init done");
+    }*/
 
     public void setId(int id) {
         this.id = id;
@@ -52,11 +66,5 @@ public class Movie {
     public void setPrice(float price) {
         this.price = price;
     }*/
-    @PostConstruct
-    private void init(){
-        id = 1;
-        title = "aaa";
-        year = 1111;
-        country = "UA";
-    }
+
 }
