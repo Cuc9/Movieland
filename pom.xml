@@ -32,5 +32,10 @@
         <artifactId>h2</artifactId>
         <version>1.4.192</version>
     </dependency>
+    <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>2.5.1</version>
+    </dependency>
 </dependencies>
 </project>

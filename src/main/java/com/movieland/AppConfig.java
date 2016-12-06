@@ -1,6 +1,9 @@
 package com.movieland;
 
 import com.movieland.dao.MockDao;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+import org.h2.store.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -21,27 +24,30 @@ import javax.sql.DataSource;
 @ComponentScan(basePackages = "com.movieland")
 @PropertySource("db/DB.properties")
 public class AppConfig {
-    @Value("$[jdbc.url]")
+    @Value("${jdbc.url}")
     String url;
 
-    @Value("$[jdbc.username]")
+    @Value("${jdbc.username}")
     String username;
 
-    @Value("$[jdbc.password]")
+    @Value("${jdbc.password}")
     String password;
 
     @Value("${jdbc.driverClassName}")
     String driverClassName;
 
     @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dm = new DriverManagerDataSource(url,username,password);
-        dm.setDriverClassName(driverClassName);
-        return dm;
+    public DataSource dataSource(){
+        HikariConfig hikariConfig = new HikariConfig();
+        hikariConfig.setDriverClassName(driverClassName);
+        hikariConfig.setJdbcUrl(url);
+        hikariConfig.setUsername(username);
+        hikariConfig.setPassword(password);
+        hikariConfig.setConnectionTestQuery("SELECT 1");
+        return new HikariDataSource(hikariConfig);
     }
 
     @Bean
-    @Autowired
     public JdbcTemplate jdbcTemplate(DataSource dataSource){
         System.out.println("JDBCTemplate created");
         return new JdbcTemplate(dataSource);
@@ -49,16 +55,13 @@ public class AppConfig {
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer ppc() {
+        System.out.println("Prop placeholder created");
         return new PropertySourcesPlaceholderConfigurer();
     }
 
     @Bean
-    public MockDao MockDao() {
-        return new MockDao();
-    }
-
-    @Bean
     public Application app(){
+        System.out.println("APP created");
         return new Application();
     }
 }

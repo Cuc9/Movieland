@@ -14,18 +14,14 @@ import java.util.Collection;
  */
 public class Application {
 
-    @Autowired
-    private static JdbcTemplate jdbc;
-
-    @Autowired
     public void chkDB(JdbcTemplate jdbc){
-        int genres_num = jdbc.queryForObject("SELECT count(*) FROM GENRE",Integer.class);
+        int genres_num = jdbc.queryForObject("SELECT 1",Integer.class);
         System.out.println(genres_num);
     }
 
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Application app = ctx.getBean(Application.class);
-        app.chkDB(jdbc);
+        //app.chkDB((JdbcTemplate) ctx.getBean("jdbcTemplate"));
     }
 }
