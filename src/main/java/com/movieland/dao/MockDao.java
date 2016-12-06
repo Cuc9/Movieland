@@ -1,13 +1,11 @@
-package dao;
+package com.movieland.dao;
 
-import dbObjects.Movie;
+import com.movieland.dbObjects.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created by arpi on 04.12.2016.

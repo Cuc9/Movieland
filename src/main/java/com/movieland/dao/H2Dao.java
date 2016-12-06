@@ -1,7 +1,6 @@
-package dao;
+package com.movieland.dao;
 
-import dbObjects.Movie;
-import org.springframework.stereotype.Component;
+import com.movieland.dbObjects.Movie;
 
 import java.util.List;
 

@@ -1,10 +1,8 @@
-package dao;
+package com.movieland.dao;
 
-import dbObjects.Movie;
-import dbObjects.Review;
+import com.movieland.dbObjects.Movie;
 
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created by arpi on 04.12.2016.

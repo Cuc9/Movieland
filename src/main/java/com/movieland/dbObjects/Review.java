@@ -1,6 +1,4 @@
-package dbObjects;
-
-import org.springframework.stereotype.Component;
+package com.movieland.dbObjects;
 
 /**
  * Created by arpi on 04.12.2016.

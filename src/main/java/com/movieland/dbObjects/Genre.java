@@ -1,4 +1,4 @@
-package dbObjects;
+package com.movieland.dbObjects;
 
 import org.springframework.stereotype.Component;
 
