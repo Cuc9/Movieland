@@ -1,10 +1,7 @@
 package com.movieland;
 
-import com.movieland.dao.MockDao;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import org.h2.store.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
@@ -64,4 +60,10 @@ public class AppConfig {
         System.out.println("APP created");
         return new Application();
     }
+
+  /*  @Bean
+    public GenreDao genreDao(){
+        System.out.println("GenreDao created");
+        return new GenreDao();
+    }*/
 }
