@@ -1,5 +1,6 @@
 package com.movieland;
 
+import com.movieland.dao.H2Dao;
 import com.movieland.dao.MockDao;
 import com.movieland.dbObjects.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +16,17 @@ import java.util.Collection;
 public class Application {
 
     public void chkDB(JdbcTemplate jdbc){
-        int genres_num = jdbc.queryForObject("SELECT 1",Integer.class);
+        jdbc.execute("USE movieland");
+        int genres_num = jdbc.queryForObject("SELECT count(*) FROM genre",Integer.class);
         System.out.println(genres_num);
     }
 
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Application app = ctx.getBean(Application.class);
-        //app.chkDB((JdbcTemplate) ctx.getBean("jdbcTemplate"));
+        H2Dao db = (H2Dao) ctx.getBean("h2Dao");
+        for (Movie m:db.getAll()) {
+            System.out.println(m);
+        }
     }
 }

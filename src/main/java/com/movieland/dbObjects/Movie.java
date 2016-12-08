@@ -14,7 +14,6 @@ public class Movie {
     private  String title;
     private int year;
     private String country;
-    @Autowired
     private List<Genre> genres;
     private String description;
     private float raiting;
@@ -37,7 +36,7 @@ public class Movie {
         this.id = id;
     }
 
-    /*public void setTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -63,6 +62,16 @@ public class Movie {
 
     public void setPrice(float price) {
         this.price = price;
-    }*/
+    }
 
+    @Override
+    public String toString() {
+        return title + '\n' +
+               year + '\n' +
+               country + '\n' +
+               genres + '\n' +
+               description +'\n' +
+               raiting + '\n' +
+               price + '\n';
+    }
 }
