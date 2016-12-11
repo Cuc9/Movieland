@@ -4,6 +4,7 @@ import com.movieland.dao.MovieDaoH2;
 import com.movieland.dbObjects.Movie;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.expression.spel.ast.FloatLiteral;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
@@ -21,8 +22,12 @@ public class Application {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Application app = ctx.getBean(Application.class);
         MovieDaoH2 db = (MovieDaoH2) ctx.getBean("movieDaoH2");
-        for (Movie m:db.getAll()) {
+        Movie mov = db.getById(1);
+        mov.setRaiting((float)9.2);
+        mov.setPrice((float)1.15);
+        System.out.println(mov);
+        /*for (Movie m:db.getAll()) {
             System.out.println(m);
-        }
+        }*/
     }
 }

@@ -72,6 +72,7 @@ public class Movie {
                genres + '\n' +
                description +'\n' +
                raiting + '\n' +
-               price + '\n';
+               price + '$' + '\n';
     }
+
 }
