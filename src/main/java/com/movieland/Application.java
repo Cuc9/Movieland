@@ -26,6 +26,7 @@ public class Application {
         mov.setRaiting((float)9.2);
         mov.setPrice((float)1.15);
         System.out.println(mov);
+        db.store(mov);
         /*for (Movie m:db.getAll()) {
             System.out.println(m);
         }*/

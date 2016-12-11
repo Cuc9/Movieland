@@ -32,6 +32,38 @@ public class Movie {
         System.out.println("Movie init done");
     }*/
 
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public List<Genre> getGenres() {
+        return genres;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public float getRaiting() {
+        return raiting;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
     public void setId(int id) {
         this.id = id;
     }

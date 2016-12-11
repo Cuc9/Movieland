@@ -85,6 +85,17 @@ public class MovieDaoH2 implements IMovieDao {
     }
 
     public void store(Movie movie) {
+        String sql = "UPDATE movie " +
+                "SET title = ?," +
+                "year = ?," +
+                "country = ?," +
+                "description = ?," +
+                "raiting = ?," +
+                "price = ?" +
+                "WHERE id = ?;";
 
+        db.update(sql, movie.getTitle(), movie.getYear(), movie.getCountry(), movie.getDescription(),
+                movie.getRaiting(), movie.getPrice(),movie.getId());
+        System.out.println("Movie " + movie.getTitle() + " STORED in DB.");
     }
 }
