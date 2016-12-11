@@ -50,7 +50,15 @@ public class GenreDaoH2 {
     }
 
     public Genre getGenre(Integer id){
-        if (genres == null){init();}
+        //if (genres == null){init();}
         return genres.get(id);
+    }
+
+    public Genre getGenreByName(String name){
+        for (Map.Entry e : genres.entrySet()) {
+            Genre g = (Genre) e.getValue();
+            if (g.getName().equals(name)){return g;}
+        }
+        return null;
     }
 }

@@ -98,4 +98,25 @@ public class MovieDaoH2 implements IMovieDao {
                 movie.getRaiting(), movie.getPrice(),movie.getId());
         System.out.println("Movie " + movie.getTitle() + " STORED in DB.");
     }
+
+    public void addMovie(Movie movie) {
+        String sqlm = "INSERT INTO movie (id, title, year, country, raiting, price, description) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?);";
+        Integer id_m = movie.getId();
+        db.update(sqlm, id_m, movie.getTitle(), movie.getYear(), movie.getCountry(), movie.getRaiting(),
+                movie.getPrice(), movie.getDescription());
+        String sqlg = "INSERT INTO genre_relations (id, id_m, id_g) " +
+                "VALUES (?, ?, ?);";
+        Integer id = db.queryForObject("SELECT MAX(id) FROM genre_relstions;",Integer.class);
+        List<Genre> genres = movie.getGenres();
+        for (Genre g : genres) {
+            db.update(sqlg, ++id, id_m, g.getId());
+        }
+    }
+
+    public void removeMovie(int movie_id) {
+        db.update("DELETE FROM movie WHERE id = ?", movie_id);
+        db.update("DELETE FRMO genre_relations WHERE id_m = ?", movie_id);
+    }
 }
+

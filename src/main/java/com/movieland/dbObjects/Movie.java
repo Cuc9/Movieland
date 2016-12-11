@@ -1,6 +1,7 @@
 package com.movieland.dbObjects;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,8 +19,11 @@ public class Movie {
     private String description;
     private float raiting;
     private float price;
+    @Autowired
+    private static JdbcTemplate db;
 
     public Movie() {
+       // setNewId();
         System.out.println("Movie created");
     }
 
@@ -66,6 +70,11 @@ public class Movie {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setNewId() {
+        Integer id = db.queryForObject("SELECT MAX(id) FROM movie",Integer.class);
+        this.id = ++id;
     }
 
     public void setTitle(String title) {

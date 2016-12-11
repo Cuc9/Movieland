@@ -15,15 +15,19 @@ public interface IMovieDao {
 
     void store (Movie movie);
 
+    void removeMovie(int movie_id);
+
+    void addMovie(Movie movie);
+
 /*    Review getReviewForMovie(int movie_id);
 
     void addReview(Review review);
 
-    void addMovie(Movie movie);
+
 
     void editMovie(int movie_id, Movie edited);
 
-    void removeMovie(int movie_id);
+
 
     void generateReport();
 

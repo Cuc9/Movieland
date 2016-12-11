@@ -1,11 +1,16 @@
 package com.movieland;
 
+import com.movieland.dao.GenreDaoH2;
 import com.movieland.dao.MovieDaoH2;
+import com.movieland.dbObjects.Genre;
 import com.movieland.dbObjects.Movie;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.expression.spel.ast.FloatLiteral;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by arpi on 04.12.2016.
@@ -21,14 +26,21 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Application app = ctx.getBean(Application.class);
-        MovieDaoH2 db = (MovieDaoH2) ctx.getBean("movieDaoH2");
-        Movie mov = db.getById(1);
-        mov.setRaiting((float)9.2);
-        mov.setPrice((float)1.15);
+        MovieDaoH2 movieDaoH2 = (MovieDaoH2) ctx.getBean("movieDaoH2");
+        Movie mov = new Movie();
+        mov.setNewId();
+        mov.setTitle("Матрица/Matrix");
+        mov.setYear(2000);
+        mov.setCountry("USA");
+        mov.setPrice(0.8f);
+        mov.setRaiting(7.5f);
+        mov.setDescription("Very good film with Kiano Reeves");
+        GenreDaoH2 genres = (GenreDaoH2) ctx.getBean("genreDaoH2");
+        List<Genre> g = new ArrayList<Genre>();
+        g.add(genres.getGenreByName("фантастика"));
+        g.add(genres.getGenreByName("боевик"));
+        mov.setGenres(g);
         System.out.println(mov);
-        db.store(mov);
-        /*for (Movie m:db.getAll()) {
-            System.out.println(m);
-        }*/
+        movieDaoH2.addMovie(mov);
     }
 }
