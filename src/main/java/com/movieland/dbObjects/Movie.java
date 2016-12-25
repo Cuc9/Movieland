@@ -27,15 +27,6 @@ public class Movie {
         System.out.println("Movie created");
     }
 
-    /*@PostConstruct
-    private void init(){
-        this.id = 1;
-        title = "aaa";
-        year = 1111;
-        country = "UA";
-        System.out.println("Movie init done");
-    }*/
-
     public int getId() {
         return id;
     }
@@ -75,7 +66,6 @@ public class Movie {
     public void setNewId() {
         Integer max_id = db.queryForObject("SELECT MAX (id) FROM movie",Integer.class);
         this.id = ++max_id;
-        //this.id = 100;
     }
 
     public void setTitle(String title) {

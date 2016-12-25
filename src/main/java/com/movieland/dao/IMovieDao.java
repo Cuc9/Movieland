@@ -21,12 +21,7 @@ public interface IMovieDao {
 
     void editMovie(int movie_id, Movie edited);
 
-/*    Review getReviewForMovie(int movie_id);
-
-    void addReview(Review review);
-
-
-    void generateReport();
-
-    void removeReview(int review_id);*/
+/*
+      void generateReport();
+    */
 }

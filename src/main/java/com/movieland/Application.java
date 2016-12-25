@@ -2,14 +2,17 @@ package com.movieland;
 
 import com.movieland.dao.GenreDaoH2;
 import com.movieland.dao.MovieDaoH2;
+import com.movieland.dao.ReviewDaoH2;
 import com.movieland.dbObjects.Genre;
 import com.movieland.dbObjects.Movie;
+import com.movieland.dbObjects.Review;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.expression.spel.ast.FloatLiteral;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -28,7 +31,12 @@ public class Application {
         Application app = ctx.getBean(Application.class);
         MovieDaoH2 movieDaoH2 = (MovieDaoH2) ctx.getBean("movieDaoH2");
         Movie mov = (Movie) ctx.getBean("movie");
+        Review review = (Review) ctx.getBean("review");
 
+        ReviewDaoH2 rd = (ReviewDaoH2) ctx.getBean("reviewDaoH2");
+        Collection reviews = rd.getReviewForMovie(1);
+        System.out.println(reviews);
+        //rd.removeReview(8);
 
         /*mov.setTitle("Матрица/Matrix");
         mov.setYear(2000);

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b67a078-4669-44a1-8b2e-f6c39fcdb68c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dao/IReviewDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dao/ReviewDaoH2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieland.iml" afterPath="$PROJECT_DIR$/movieland.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java" />
     </list>
     <ignored path="movieland.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,52 +38,51 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="204">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/DB.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <marker date="1482686294918" expanded="true" signature="673:699" ph="SELECT count... genre" />
-                <marker date="1482686294918" expanded="false" signature="1408:1415" ph="&lt;~&gt;" />
+                <marker date="1482693804410" expanded="true" signature="779:805" ph="SELECT count... genre" />
+                <marker date="1482693804410" expanded="false" signature="1758:1765" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMovieDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java">
+      <file leaf-file-name="ReviewDaoH2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/ReviewDaoH2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+              <caret line="40" column="118" selection-start-line="40" selection-start-column="118" selection-end-line="40" selection-end-column="118" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1482694209117" expanded="true" signature="601:683" ph="INSERT INTO review... " />
+                <marker date="1482694209117" expanded="true" signature="849:880" ph="DELETE FROM " />
+                <marker date="1482694209117" expanded="true" signature="1005:1040" ph="SELECT * FRO... review" />
+                <marker date="1482694209117" expanded="true" signature="1400:1436" ph="SELECT title... movie" />
+                <marker date="1482694209117" expanded="true" signature="1519:1558" ph="SELECT full_... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IReviewDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/IReviewDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,22 +90,10 @@
       <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+            <state relative-caret-position="440">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <marker date="1482685053622" expanded="true" signature="1465:1491" ph="SELECT MAX(i... movie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreDaoH2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/GenreDaoH2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-              <folding>
-                <marker date="1481492958364" expanded="true" signature="938:957" ph="SELECT * FRO... genre" />
+                <marker date="1482689159781" expanded="true" signature="1274:1300" ph="SELECT MAX(i... movie" />
               </folding>
             </state>
           </provider>
@@ -109,19 +102,36 @@
       <file leaf-file-name="MovieDaoH2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+            <state relative-caret-position="731">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#1379#1386#0" expanded="true" />
-                <marker date="1482685943564" expanded="true" signature="1437:1483" ph="SELECT id_g GENRE_RELATIONS" />
-                <marker date="1482685943564" expanded="true" signature="2076:2095" ph="SELECT * FRO... movie" />
-                <marker date="1482685943564" expanded="true" signature="2502:2534" ph="SELECT * FRO... movie" />
-                <marker date="1482685943564" expanded="true" signature="2882:3126" ph="UPDATE movie... " />
-                <marker date="1482685943564" expanded="true" signature="3448:3571" ph="INSERT INTO movie... " />
-                <marker date="1482685943564" expanded="true" signature="3800:3882" ph="INSERT INTO genre_relations... " />
-                <marker date="1482685943564" expanded="true" signature="3926:3961" ph="SELECT MAX(i... genre_relstions" />
-                <marker date="1482685943564" expanded="true" signature="4193:4223" ph="DELETE FROM " />
-                <marker date="1482685943564" expanded="true" signature="4256:4298" ph="DELETE FROM " />
+                <marker date="1482692300239" expanded="true" signature="1437:1483" ph="SELECT id_g GENRE_RELATIONS" />
+                <marker date="1482692300239" expanded="true" signature="2076:2095" ph="SELECT * FRO... movie" />
+                <marker date="1482692300239" expanded="true" signature="2504:2536" ph="SELECT * FRO... movie" />
+                <marker date="1482692300239" expanded="true" signature="2884:3128" ph="UPDATE movie... " />
+                <marker date="1482692300239" expanded="true" signature="3450:3573" ph="INSERT INTO movie... " />
+                <marker date="1482692300239" expanded="true" signature="3802:3884" ph="INSERT INTO genre_relations... " />
+                <marker date="1482692300239" expanded="true" signature="3928:3963" ph="SELECT MAX(i... genre_relstions" />
+                <marker date="1482692300239" expanded="true" signature="4195:4225" ph="DELETE FROM " />
+                <marker date="1482692300239" expanded="true" signature="4258:4300" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Review.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <marker date="1482694209157" expanded="true" signature="1209:1236" ph="SELECT MAX (... review" />
               </folding>
             </state>
           </provider>
@@ -168,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dbObjects/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbObjects/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/db/DB.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/AppConfig.java" />
@@ -176,10 +185,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/GenreDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/MockDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/GenreDaoH2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/IReportDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/IReviewDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/movieland/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dao/ReviewDaoH2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java" />
       </list>
     </option>
   </component>
@@ -441,7 +455,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -921,7 +935,7 @@
       <workItem from="1481454648578" duration="6541000" />
       <workItem from="1481479466877" duration="8642000" />
       <workItem from="1481808709264" duration="590000" />
-      <workItem from="1482680925339" duration="4187000" />
+      <workItem from="1482680925339" duration="11570000" />
     </task>
     <task id="LOCAL-00001" summary="nothing works yet">
       <created>1480971883839</created>
@@ -979,11 +993,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481494105614</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="getAll +getById + store + edit + delete">
+      <created>1482686347199</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1482686347199</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76009000" />
+    <option name="totallyTimeSpent" value="83392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -997,7 +1018,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1039,11 +1060,12 @@
     <MESSAGE value="getAll +getById" />
     <MESSAGE value="getAll +getById + store" />
     <MESSAGE value="getAll +getById + store + in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="getAll +getById + store + in progress" />
+    <MESSAGE value="getAll +getById + store + edit + delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="getAll +getById + store + edit + delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1052,20 +1074,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/DB.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.3.RELEASE/spring-core-4.3.3.RELEASE.jar!/org/springframework/core/io/Resource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/MockDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1078,7 +1086,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1482685053622" expanded="true" signature="1465:1491" ph="SELECT MAX(i... movie" />
+            <marker date="1482689159781" expanded="true" signature="1274:1300" ph="SELECT MAX(i... movie" />
           </folding>
         </state>
       </provider>
@@ -1120,8 +1128,8 @@
         <state relative-caret-position="238">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
-            <marker date="1482686294918" expanded="true" signature="673:699" ph="SELECT count... genre" />
-            <marker date="1482686294918" expanded="false" signature="1408:1415" ph="&lt;~&gt;" />
+            <marker date="1482693804410" expanded="true" signature="779:805" ph="SELECT count... genre" />
+            <marker date="1482693804410" expanded="false" signature="1758:1765" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -1131,7 +1139,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding>
-            <marker date="1482685053622" expanded="true" signature="1465:1491" ph="SELECT MAX(i... movie" />
+            <marker date="1482689159781" expanded="true" signature="1274:1300" ph="SELECT MAX(i... movie" />
           </folding>
         </state>
       </provider>
@@ -1166,13 +1174,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.3.RELEASE/spring-beans-4.3.3.RELEASE.jar!/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1362,10 +1363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="440">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1378,68 +1379,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/GenreDaoH2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        <state relative-caret-position="132">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="28" />
           <folding>
             <marker date="1481492958364" expanded="true" signature="938:957" ph="SELECT * FRO... genre" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <marker date="1482685053622" expanded="true" signature="1465:1491" ph="SELECT MAX(i... movie" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/IMovieDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="440">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <marker date="1482689159781" expanded="true" signature="1274:1300" ph="SELECT MAX(i... movie" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        <state relative-caret-position="731">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#1379#1386#0" expanded="true" />
-            <marker date="1482685943564" expanded="true" signature="1437:1483" ph="SELECT id_g GENRE_RELATIONS" />
-            <marker date="1482685943564" expanded="true" signature="2076:2095" ph="SELECT * FRO... movie" />
-            <marker date="1482685943564" expanded="true" signature="2502:2534" ph="SELECT * FRO... movie" />
-            <marker date="1482685943564" expanded="true" signature="2882:3126" ph="UPDATE movie... " />
-            <marker date="1482685943564" expanded="true" signature="3448:3571" ph="INSERT INTO movie... " />
-            <marker date="1482685943564" expanded="true" signature="3800:3882" ph="INSERT INTO genre_relations... " />
-            <marker date="1482685943564" expanded="true" signature="3926:3961" ph="SELECT MAX(i... genre_relstions" />
-            <marker date="1482685943564" expanded="true" signature="4193:4223" ph="DELETE FROM " />
-            <marker date="1482685943564" expanded="true" signature="4256:4298" ph="DELETE FROM " />
+            <marker date="1482692300239" expanded="true" signature="1437:1483" ph="SELECT id_g GENRE_RELATIONS" />
+            <marker date="1482692300239" expanded="true" signature="2076:2095" ph="SELECT * FRO... movie" />
+            <marker date="1482692300239" expanded="true" signature="2504:2536" ph="SELECT * FRO... movie" />
+            <marker date="1482692300239" expanded="true" signature="2884:3128" ph="UPDATE movie... " />
+            <marker date="1482692300239" expanded="true" signature="3450:3573" ph="INSERT INTO movie... " />
+            <marker date="1482692300239" expanded="true" signature="3802:3884" ph="INSERT INTO genre_relations... " />
+            <marker date="1482692300239" expanded="true" signature="3928:3963" ph="SELECT MAX(i... genre_relstions" />
+            <marker date="1482692300239" expanded="true" signature="4195:4225" ph="DELETE FROM " />
+            <marker date="1482692300239" expanded="true" signature="4258:4300" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dbObjects/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <marker date="1482694209157" expanded="true" signature="1209:1236" ph="SELECT MAX (... review" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <marker date="1482686294918" expanded="true" signature="673:699" ph="SELECT count... genre" />
-            <marker date="1482686294918" expanded="false" signature="1408:1415" ph="&lt;~&gt;" />
+            <marker date="1482693804410" expanded="true" signature="779:805" ph="SELECT count... genre" />
+            <marker date="1482693804410" expanded="false" signature="1758:1765" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/ReviewDaoH2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="40" column="118" selection-start-line="40" selection-start-column="118" selection-end-line="40" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1482694209117" expanded="true" signature="601:683" ph="INSERT INTO review... " />
+            <marker date="1482694209117" expanded="true" signature="849:880" ph="DELETE FROM " />
+            <marker date="1482694209117" expanded="true" signature="1005:1040" ph="SELECT * FRO... review" />
+            <marker date="1482694209117" expanded="true" signature="1400:1436" ph="SELECT title... movie" />
+            <marker date="1482694209117" expanded="true" signature="1519:1558" ph="SELECT full_... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/dao/IReviewDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
