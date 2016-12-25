@@ -20,7 +20,7 @@ public class Movie {
     private float raiting;
     private float price;
     @Autowired
-    private static JdbcTemplate db;
+    private JdbcTemplate db;
 
     public Movie() {
        // setNewId();
@@ -73,8 +73,9 @@ public class Movie {
     }
 
     public void setNewId() {
-        Integer id = db.queryForObject("SELECT MAX(id) FROM movie",Integer.class);
-        this.id = ++id;
+        Integer max_id = db.queryForObject("SELECT MAX (id) FROM movie",Integer.class);
+        this.id = ++max_id;
+        //this.id = 100;
     }
 
     public void setTitle(String title) {

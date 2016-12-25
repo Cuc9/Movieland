@@ -27,9 +27,10 @@ public class Application {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Application app = ctx.getBean(Application.class);
         MovieDaoH2 movieDaoH2 = (MovieDaoH2) ctx.getBean("movieDaoH2");
-        Movie mov = new Movie();
-        mov.setNewId();
-        mov.setTitle("Матрица/Matrix");
+        Movie mov = (Movie) ctx.getBean("movie");
+
+
+        /*mov.setTitle("Матрица/Matrix");
         mov.setYear(2000);
         mov.setCountry("USA");
         mov.setPrice(0.8f);
@@ -41,6 +42,13 @@ public class Application {
         g.add(genres.getGenreByName("боевик"));
         mov.setGenres(g);
         System.out.println(mov);
-        movieDaoH2.addMovie(mov);
+        mov.setNewId();
+        movieDaoH2.addMovie(mov);*/
+
+        ///mov.setYear(2000);
+
+
+        //movieDaoH2.removeMovie(6);
+        //movieDaoH2.addMovie(mov);
     }
 }

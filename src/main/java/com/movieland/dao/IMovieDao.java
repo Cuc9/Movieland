@@ -19,14 +19,11 @@ public interface IMovieDao {
 
     void addMovie(Movie movie);
 
+    void editMovie(int movie_id, Movie edited);
+
 /*    Review getReviewForMovie(int movie_id);
 
     void addReview(Review review);
-
-
-
-    void editMovie(int movie_id, Movie edited);
-
 
 
     void generateReport();
