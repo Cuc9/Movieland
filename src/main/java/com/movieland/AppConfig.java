@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
 
 import javax.sql.DataSource;
 
@@ -18,7 +19,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = "com.movieland")
-@PropertySource("db/DB.properties")
+@PropertySource("WEB-INF/DB.properties")
 public class AppConfig {
     @Value("${jdbc.url}")
     String url;
@@ -60,6 +61,17 @@ public class AppConfig {
         System.out.println("APP created");
         return new Application();
     }
+
+/*    @Bean
+    public static SimpleUrlHandlerMapping suhm (){
+        SimpleUrlHandlerMapping handlerMapping = new SimpleUrlHandlerMapping();
+        handlerMapping
+        return handlerMapping;
+    }*/
+/*    @Bean
+    public static InternalResourceViewResolver irvr(){
+        return new InternalResourceViewResolver("/WEB-INF/jsp/",".jsp");
+    }*/
 
   /*  @Bean
     public GenreDao genreDao(){
