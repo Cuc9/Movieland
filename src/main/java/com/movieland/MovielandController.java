@@ -50,7 +50,7 @@ public class MovielandController {
 
 
     @RequestMapping(method = RequestMethod.GET, path = "/movie/{id}")
-    public void movieById(@PathVariable("id") int id, HttpServletResponse resp) throws ServletException, IOException {
+    public void movieById(@PathVariable int id, HttpServletResponse resp) throws ServletException, IOException {
         Collection<Review> reviews = reviewDao.getReviewForMovie(id);
         Writer wr = resp.getWriter();
         wr.write(movieToJson(movDao.getById(id)));

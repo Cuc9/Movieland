@@ -39,8 +39,8 @@
       <file leaf-file-name="MovielandController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1119,7 +1119,7 @@
       <workItem from="1482952800371" duration="2655000" />
       <workItem from="1483637119261" duration="14217000" />
       <workItem from="1483730651598" duration="4451000" />
-      <workItem from="1483903942891" duration="5891000" />
+      <workItem from="1483903942891" duration="6632000" />
     </task>
     <task id="LOCAL-00001" summary="nothing works yet">
       <created>1480971883839</created>
@@ -1233,11 +1233,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483909338840</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="rest index + v1/movies works&#10; v1/movie/id works&#10; getting id with @PathVariable">
+      <created>1483909906624</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1483909906624</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111701000" />
+    <option name="totallyTimeSpent" value="112442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1310,7 +1317,8 @@
     <MESSAGE value="rest index + v1/movies works" />
     <MESSAGE value="rest index + v1/movies works all the stages" />
     <MESSAGE value="rest index + v1/movies works&#10; v1/movie/id works" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest index + v1/movies works&#10; v1/movie/id works" />
+    <MESSAGE value="rest index + v1/movies works&#10; v1/movie/id works&#10; getting id with @PathVariable" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest index + v1/movies works&#10; v1/movie/id works&#10; getting id with @PathVariable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1705,8 +1713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="196">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
