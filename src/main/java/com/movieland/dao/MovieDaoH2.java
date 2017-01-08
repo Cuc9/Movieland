@@ -74,13 +74,9 @@ public class MovieDaoH2 implements IMovieDao {
     }
 
     public Movie getById(int movie_id) {
-        //db.execute("USE movieland");
         List<Movie> movie = db.query("SELECT * FROM movie WHERE id = ?",
-                new RowMapper<Movie>() {
-                    public Movie mapRow(ResultSet resultSet, int i) throws SQLException {
-                        return generateMovie(resultSet);
-                    }
-                }, (Integer) movie_id);
+                (ResultSet resultSet, int i) -> generateMovie(resultSet),
+                (Integer) movie_id);
         return movie.get(0);
     }
 
