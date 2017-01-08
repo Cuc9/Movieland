@@ -4,7 +4,6 @@
     <list default="true" id="8b67a078-4669-44a1-8b2e-f6c39fcdb68c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java" afterPath="$PROJECT_DIR$/src/main/java/com/movieland/dao/MovieDaoH2.java" />
     </list>
     <ignored path="movieland.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="MovielandController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="247">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1120,7 +1119,7 @@
       <workItem from="1482952800371" duration="2655000" />
       <workItem from="1483637119261" duration="14217000" />
       <workItem from="1483730651598" duration="4451000" />
-      <workItem from="1483903942891" duration="5330000" />
+      <workItem from="1483903942891" duration="5891000" />
     </task>
     <task id="LOCAL-00001" summary="nothing works yet">
       <created>1480971883839</created>
@@ -1227,11 +1226,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483735755710</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="rest index + v1/movies works&#10; v1/movie/id works">
+      <created>1483909338840</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1483909338840</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111140000" />
+    <option name="totallyTimeSpent" value="111701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1303,7 +1309,8 @@
     <MESSAGE value="rest index (hello world) works" />
     <MESSAGE value="rest index + v1/movies works" />
     <MESSAGE value="rest index + v1/movies works all the stages" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest index + v1/movies works all the stages" />
+    <MESSAGE value="rest index + v1/movies works&#10; v1/movie/id works" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest index + v1/movies works&#10; v1/movie/id works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1698,8 +1705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movieland/MovielandController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        <state relative-caret-position="247">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

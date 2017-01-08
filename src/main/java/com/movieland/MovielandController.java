@@ -9,6 +9,7 @@ import com.movieland.dbObjects.Movie;
 import com.movieland.dbObjects.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -48,16 +49,11 @@ public class MovielandController {
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, path = "/movie/*")
-    public void movieById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String uri = req.getRequestURI();
-        String[] urlSplit = uri.split("/");
-        int id = Integer.parseInt(urlSplit[urlSplit.length - 1]);
+    @RequestMapping(method = RequestMethod.GET, path = "/movie/{id}")
+    public void movieById(@PathVariable("id") int id, HttpServletResponse resp) throws ServletException, IOException {
         Collection<Review> reviews = reviewDao.getReviewForMovie(id);
         Writer wr = resp.getWriter();
         wr.write(movieToJson(movDao.getById(id)));
-        System.out.println(movDao.getById(id));
-
         Iterator<Review> it = reviews.iterator();
         int i = 0;
         while (it.hasNext() && i < 2){
